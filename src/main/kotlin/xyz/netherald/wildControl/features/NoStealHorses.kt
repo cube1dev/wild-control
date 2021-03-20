@@ -14,7 +14,7 @@ class NoStealHorses : Listener {
             if(event.mount is Tameable) {
                 val tameable: Tameable = event.mount as Tameable
                 if(tameable.isTamed) {
-                    if (event.entity.uniqueId != tameable.ownerUniqueId) {
+                    if (event.entity.uniqueId != tameable.owner?.uniqueId) {
                         event.isCancelled = true
                     }
                 }
