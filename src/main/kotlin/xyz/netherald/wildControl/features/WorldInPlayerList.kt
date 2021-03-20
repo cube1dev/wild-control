@@ -23,6 +23,7 @@ class WorldInPlayerList : Listener {
         }
     }
 
+    @EventHandler
     fun changeWorld(event: PlayerChangedWorldEvent) {
         when(event.player.world.name) {
             "world" -> {
