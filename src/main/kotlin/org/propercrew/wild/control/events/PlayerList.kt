@@ -22,15 +22,15 @@ class PlayerList : Listener {
     private fun worldIndicator(player: Player) {
         when (player.world.name) {
             "world_nether" -> {
-                player.setPlayerListName("[${ChatColor.RED}${ChatColor.BOLD} N ${ChatColor.RESET} ] ${player.name}")
+                player.setPlayerListName("[${ChatColor.RED}${ChatColor.BOLD} N ${ChatColor.RESET}] ${player.name}")
             }
 
             "world_the_end" -> {
-                player.setPlayerListName("[${ChatColor.DARK_PURPLE}${ChatColor.BOLD} E ${ChatColor.RESET} ] ${player.name}")
+                player.setPlayerListName("[${ChatColor.DARK_PURPLE}${ChatColor.BOLD} E ${ChatColor.RESET}] ${player.name}")
             }
 
             else -> {
-                player.setPlayerListName("[${ChatColor.GREEN}${ChatColor.BOLD} O ${ChatColor.RESET} ] ${player.name}")
+                player.setPlayerListName("[${ChatColor.GREEN}${ChatColor.BOLD} O ${ChatColor.RESET}] ${player.name}")
             }
         }
     }

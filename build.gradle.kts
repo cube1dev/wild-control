@@ -3,7 +3,7 @@ plugins {
 }
 
 group = "org.propercrew"
-version = "2.0.0"
+version = "2.0.1"
 
 java {
     toolchain {
@@ -28,6 +28,12 @@ shade.extendsFrom(configurations.implementation.get())
 tasks {
     compileKotlin {
         kotlinOptions.jvmTarget = JavaVersion.VERSION_16.toString()
+    }
+
+    processResources {
+        filesMatching("*.yml") {
+            expand(project.properties)
+        }
     }
 
     jar {
