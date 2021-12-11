@@ -1,2 +1,2 @@
-rootProject.name = "WildControl"
+rootProject.name = "wild-control"
 

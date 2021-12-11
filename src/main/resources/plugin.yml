@@ -1,0 +1,4 @@
+name: ${rootProject.name}
+version: ${rootProject.version}
+api-version: 1.17
+main: org.propercrew.wild.control.WildControl
